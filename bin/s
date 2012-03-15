@@ -1,0 +1,4 @@
+#!/bin/sh
+
+grep -n --color=auto -R "$@" *;
+

@@ -1,0 +1,27 @@
+#! /bin/sh
+help0()
+{
+echo "ERROR: No argument provided."
+echo "Usage:"
+echo "  `basename $0` \"title\" to provide a new Terminal title."
+}
+
+help2()
+{
+echo "ERROR: Too many arguments provided."
+echo "Usage:"
+echo "  `basename $0` \"title\" to provide a new Terminal title."
+}
+
+if [ $# -eq 0 ]
+then
+  help0;
+elif [ $# -eq 1 ]
+then
+  osascript -e "tell application \"Terminal\" to set custom title of window 1 to \"$1\""
+elif [ $# -gt 1 ]
+then
+  help2;
+fi
+
+
