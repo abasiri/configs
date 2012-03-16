@@ -3,4 +3,5 @@ map <D-t> :tabnew<return><C-p>
 imap <D-t> :tabnew<return><C-p>
 
 autocmd VimEnter * NERDTreeClose
+autocmd VimEnter * CtrlP
 set noic
