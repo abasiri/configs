@@ -3,7 +3,7 @@
 
 Generate ctags for rails project:
 
-ctags -R `bundle show rails`/../*
+     ctags -R `bundle show rails`/../*
 
 C-] - go to definition
 C-T - Jump back from the definition.
