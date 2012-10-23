@@ -7,3 +7,6 @@ autocmd VimEnter * if isdirectory(argv(0))| exec "CtrlP" |endif
 set noic
 
 set tags=./tags;/
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
