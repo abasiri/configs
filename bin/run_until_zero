@@ -1,7 +1,0 @@
-RC=1 
-while [[ RC -ne 0 ]]
-do
-   $@
-   RC=$?
-done
-
