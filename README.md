@@ -1,6 +1,6 @@
 
+# CTags
 
-== CTags ==
 Generate ctags for rails project:
 
 ctags -R `bundle show rails`/../*
