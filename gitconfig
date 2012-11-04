@@ -1,13 +1,13 @@
 [user]
-  name = Ali Basiri
-  email = ali@pagerduty.com
+	name = Ali Basiri
+	email = abassiri@gmail.com
 
 [color]
   diff = auto
   status = auto
   branch = auto
   interactive = auto
-  ui = auto
+	ui = auto
 
 [color "branch"]
   current = yellow reverse
@@ -39,3 +39,5 @@
 [mergetool "sourcetree"]
   cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
