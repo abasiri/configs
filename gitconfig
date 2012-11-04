@@ -7,7 +7,7 @@
   status = auto
   branch = auto
   interactive = auto
-	ui = auto
+  ui = auto
 
 [color "branch"]
   current = yellow reverse
@@ -41,3 +41,7 @@
   trustExitCode = true
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+[push]
+	default = tracking
+

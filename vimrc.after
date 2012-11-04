@@ -8,3 +8,9 @@ set noic
 
 au BufNewFile,BufRead *.hamlc set filetype=haml
 
+set tags=./tags;/
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+set wildignore+=*/tmp/*,tags
+
