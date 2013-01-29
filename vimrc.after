@@ -3,8 +3,9 @@ map <D-t> :tabnew<return><C-p>
 imap <D-t> :tabnew<return><C-p>
 
 autocmd VimEnter * NERDTreeClose
-autocmd VimEnter * if argc() > 0 && isdirectory(argv(0)) | exec "CtrlP" | endif
+" autocmd VimEnter * if argc() > 0 && isdirectory(argv(0)) | exec "CtrlP" | endif
 set noic
+set noeol " no end of line
 
 au BufNewFile,BufRead *.hamlc set filetype=haml
 
