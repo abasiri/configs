@@ -1,4 +1,4 @@
 #!/bin/sh
 
-grep -n --color=auto -R "$@" *;
+git grep -n --color=auto "$@" *;
 

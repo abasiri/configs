@@ -4,4 +4,4 @@ alias mx="cd ~/dev/mixbook_com"
 alias rails_root="git rev-parse --show-toplevel"
 alias migrate="mvim \`rails_root\`/db/migrate/\`ls -F \\\`rails_root\\\`/db/migrate | grep -v -e \"\/\" | tail -1\`"
 alias grep="grep --color=auto"
-
+alias ls='ls -G'

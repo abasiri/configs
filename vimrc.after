@@ -18,11 +18,13 @@ set wildignore+=*/tmp/*,tags
 
 
 autocmd FileType javascript set shiftwidth=4
-autocmd FileType javascript set ts=4
-autocmd FileType javascript set bs=2
-autocmd FileType ruby set shiftwidth=2
-autocmd FileType ruby set ts=2
-autocmd FileType ruby set bs=2
+autocmd FileType javascript set tabstop=4
+autocmd FileType javascript set softtabstop=4
+autocmd FileType javascript set expandtab
+autocmd FileType css set shiftwidth=4
+autocmd FileType css set tabstop=4
+autocmd FileType css set softtabstop=4
+autocmd FileType css set expandtab
 
 set colorcolumn=121
 highlight ColorColumn ctermbg=black guibg=black
