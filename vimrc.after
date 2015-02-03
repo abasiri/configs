@@ -1,4 +1,4 @@
-color molokai
+color ali_molokai
 map <D-t> :tabnew<return><C-p>
 imap <D-t> :tabnew<return><C-p>
 

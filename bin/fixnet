@@ -1,0 +1,12 @@
+interfacetofix=`netstat -rn | grep "0&" | awk '{print $NF}'`
+
+if [ -z "$interfacetofix" ]
+then
+	echo "Nothing to fix"
+else
+	echo "Interface: $interfacetofix"
+	interfacenametofix=`networksetup -listnetworkserviceorder | grep "$interfacetofix" -B1 | tail -2 | head -1 | cut -d " " -f 2-10`
+	echo "Fixing $interfacenametofix"
+	sudo networksetup -setv4off "$interfacenametofix"
+	sudo networksetup -setdhcp "$interfacenametofix"
+fi
