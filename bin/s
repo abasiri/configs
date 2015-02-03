@@ -1,5 +1,4 @@
 #!/bin/sh
 
-#git grep -n --color=auto "$@" *;
-grep --color=auto -R "$@" *
+grep --exclude=tags --exclude-dir=log  -R -n --color=auto "$@" *;
 
